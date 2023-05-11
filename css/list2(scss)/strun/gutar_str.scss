@@ -1,0 +1,120 @@
+body {
+    background: linear-gradient(to top, rgb(54, 192, 146) 2%, black), no-repeat;
+
+    .fon {
+        height: 1380px;
+        grid-gap: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        header {
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(to bottom, black 1%, aquamarine);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 0px;
+
+            a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    color: blueviolet;
+                    transition: all 0.5s;
+                }
+            }
+        }
+
+        .osn {
+            display: grid;
+            grid-gap: 50px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 85% 85% 85%;
+
+            a {
+                text-decoration: none;
+                border-radius: 20px;
+
+                &:hover {
+                    transition: all 0.2s;
+                    transform: scale(1.1);
+                }
+
+
+                &:nth-child(1) {
+                    background: url(../../../foto/strun/gitar/elexir10_47.png) no-repeat;
+                    background-size: 400px;
+                }
+
+                &:nth-child(2) {
+                    background: url(../../../foto/strun/gitar/elexir11_52.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                &:nth-child(3) {
+                    background: url(../../../foto/strun/gitar/elexir12_53.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                &:nth-child(4) {
+                    background: url(../../../foto/strun/gitar/earThroow10_50.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                &:nth-child(5) {
+                    background: url(../../../foto/strun/gitar/earThroow11_52.png) no-repeat;
+                    background-size: 370px;
+                }
+
+                &:nth-child(6) {
+                    background: url(../../../foto/strun/gitar/earThroow12_54.png) no-repeat;
+                    background-size: 360px;
+                }
+
+                &:nth-child(7) {
+                    background: url(../../../foto/strun/gitar/daddario1.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                &:nth-child(8) {
+                    background: url(../../../foto/strun/gitar/daddario2.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                &:nth-child(9) {
+                    background: url(../../../foto/strun/gitar/daddario3.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                div {
+                    height: 100px;
+
+                    p {
+                        margin-bottom: 10px;
+                        text-align: center;
+                        color: red;
+                    }
+                }
+            }
+        }
+
+        footer {
+            margin-top: 830px;
+            text-align: center;
+            font-size: 30px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .fon {
+        height: 1600px;
+    }
+}

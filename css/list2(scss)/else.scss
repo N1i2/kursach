@@ -1,0 +1,106 @@
+body {
+    background: linear-gradient(to top, rgb(54, 192, 146) 2%, black), no-repeat;
+
+    .fon {
+        height: 1000px;
+        grid-gap: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        header {
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(to bottom, black 1%, aquamarine);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 0px;
+
+            a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    color: blueviolet;
+                    transition: all 0.5s;
+                }
+            }
+        }
+
+        .osn {
+            display: grid;
+            grid-gap: 50px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 130% 130%;
+
+            a {
+                text-decoration: none;
+                border-radius: 20px;
+
+                &:hover {
+                    transition: all 0.2s;
+                    transform: scale(1.1);
+                }
+
+
+                &:nth-child(1) {
+                    background: url(../../foto/else/BC11.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                &:nth-child(2) {
+                    background: url(../../foto/else/CC14.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                &:nth-child(3) {
+                    background: url(../../foto/else/JYC00.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                &:nth-child(4) {
+                    background: url(../../foto/else/LIS100.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                &:nth-child(5) {
+                    background: url(../../foto/else/NU1S.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                &:nth-child(6) {
+                    background: url(../../foto/else/TUS35.png) no-repeat;
+                    background-size: 380px;
+                }
+
+                div {
+                    height: 100px;
+
+                    p {
+                        margin-bottom: 10px;
+                        text-align: center;
+                        font-weight: 900px;
+                        color: red;
+                    }
+                }
+            }
+        }
+
+        footer {
+            margin-top: 570px;
+            text-align: center;
+            font-size: 30px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .fon {
+        height: 1600px;
+    }
+}

@@ -1,0 +1,198 @@
+body {
+    background: linear-gradient(to top, black 20%, gray), no-repeat;
+}
+
+.fon {
+    height: 900px;
+    grid-gap: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.nul {
+    display: inline;
+}
+
+.cl {
+    display: inline;
+    color: green;
+    margin-bottom: 20px;
+}
+
+header p {
+    display: inline;
+}
+
+header p:nth-child(2) {
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+img {
+    width: 500px;
+    margin-right: 70px;
+    display: inline;
+    float: left;
+    border-radius: 30px;
+}
+
+.nal {
+    margin-bottom: 30px;
+}
+
+.name {
+    text-align: center;
+    font-size: 25px;
+    color: darkblue;
+    margin-bottom: 70px;
+}
+
+.by p:not(.name) {
+    font-size: 20px;
+    text-align: left;
+}
+
+.by {
+    height: 500px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.199);
+}
+
+.colich {
+    text-align: center;
+}
+
+.vide {
+    font-size: 20px;
+}
+
+.struna {
+    text-align: center;
+}
+
+.but {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100px;
+    position: relative;
+    height: 40px;
+}
+
+.coment {
+    margin-top: 100px;
+    text-indent: 70px;
+    padding: 0 30px;
+    font-size: 20px;
+    color: wheat;
+}
+
+.mony {
+    margin-top: 20px;
+}
+
+.mony input {
+    display: inline;
+}
+
+.mony p {
+    display: inline;
+}
+
+#no {
+    color: rgba(248, 186, 70, 0.932);
+    font-size: 30px;
+}
+
+#go {
+    color: rgba(248, 186, 70, 0.932);
+    font-size: 30px;
+}
+
+.text2,
+.text,
+.pay {
+    color: wheat;
+}
+
+.str:checked .neob {
+    display: none;
+}
+
+.menu {
+    display: block;
+    height: 380px;
+}
+
+#senk {
+    font-size: 50px;
+    color: rgba(248, 186, 70, 0.932);
+    margin-top: 60px;
+}
+
+.ob {
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .fon {
+        height: 1690px;
+    }
+
+    .by {
+        height: 600px;
+    }
+
+    img {
+        display: block;
+        width: 70%;
+        margin: 0 110px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        margin-bottom: 10px;
+        display: block;
+        height: 950px;
+    }
+
+    .line {
+        padding-left: 120px;
+        padding-bottom: 20px;
+        border-radius: 30px;
+        display: block;
+        height: 1050px;
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+
+    .coment {
+        display: block;
+        margin-top: 550px;
+    }
+
+    .name {
+        font-size: 30px;
+        margin-right: 100px;
+    }
+}
+
+.pay {
+    display: block;
+}

@@ -1,0 +1,291 @@
+body {
+    background: linear-gradient(to top, rgb(54, 192, 146) 2%, black), no-repeat;
+}
+
+.fon {
+    height: 133 0px;
+    grid-gap: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.adv {
+    height: 800px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.651);
+    writing-mode: vertical-rl;
+    font-size: 33px;
+    float: right;
+    width: 10%;
+    text-align: center;
+    padding-right: 10px;
+}
+
+label {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+footer {
+    padding-left: 20px;
+    padding-top: 10px;
+    display: block;
+    margin-top: 20px;
+    height: 105px;
+    width: 100%;
+    text-align: left;
+    color: rgb(77, 77, 77);
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+@media (max-width: 780px) {
+    .fon {
+        height: 1970px;
+    }
+
+    footer {
+        margin-top: 20px;
+        height: 120px;
+    }
+
+    .adv {
+        height: 1200px;
+    }
+
+    .osn {
+        margin-top: 50px;
+    }
+
+    label {
+        display: block;
+        width: 55px;
+        font-size: 40px;
+        color: white;
+    }
+
+    .menu {
+        flex-direction: column;
+        /* position: absolute; */
+        height: 200px;
+    }
+
+    .menu>ul li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    .history p {
+        display: block;
+        width: 500px;
+    }
+
+    input:checked~.sev {
+        background: linear-gradient(to top, black 30%, aquamarine), no-repeat;
+        z-index: 10;
+        border-radius: 30px;
+        width: 95%;
+        display: block;
+    }
+
+    input:checked~.sev li:not(:nth-child(1)) {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+}
+
+header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, black 30%, aquamarine);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+header p {
+    /* margin-top: 10px; */
+    display: inline;
+    color: aliceblue;
+}
+
+svg {
+    display: inline;
+    float: right;
+    margin-right: 30px;
+    /* margin-top: 15px; */
+    /* margin-bottom: 4px; */
+}
+
+.menu {
+    /* background-color: gray; */
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.sev li:not(:nth-child(1)) {
+    margin-right: 41px;
+    margin-top: 25px;
+    border-radius: 10px;
+    font-size: 35px;
+    display: inline;
+    float: left;
+    /* border: gray 1px solid; */
+    background-color: rgba(128, 128, 128, 0.384);
+    color: aquamarine;
+    width: 230px;
+    height: 40px;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: aquamarine;
+    border-radius: 7px;
+}
+
+.osn {
+    display: inline;
+    width: 100%;
+    height: 500px;
+}
+
+.history {
+    margin-left: 30px;
+    display: inline-block;
+    height: 800px;
+    width: 67%;
+    /* background-color: blue; */
+}
+
+.history p {
+    text-indent: 30px;
+    font-size: 30px;
+    color: wheat;
+}
+
+.strun {
+    height: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.void {
+    position: absolute;
+    display: none;
+}
+
+
+
+.strun:hover .void,
+.void a {
+    display: block;
+}
+
+.void a {
+    /* border: 1px black solid; */
+    background-color: gray;
+    margin-top: 2px;
+}
+
+.next:hover {
+    color: blueviolet;
+    transition: all 0.5s;
+}
+
+.vk {
+    color: blue;
+    text-decoration: none;
+}
+
+.vk:hover {
+    color: aqua;
+    transition: all 1s;
+}
+
+.svg {
+    text-decoration: none;
+}
+
+.svg:hover~svg {
+    animation: hello infinite 3.5s;
+}
+
+@keyframes hello {
+    0% {
+        rotate: 0;
+        transform: skew(0);
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: skew(50deg);
+    }
+
+    50% {
+        rotate: 1080deg;
+        transform: skew(0);
+        transform: translate(-100px);
+    }
+
+    75% {
+        transform: translate(-10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        rotate: 0;
+        transform: skew(0);
+    }
+}
+
+.svg p:hover {
+    animation: col infinite linear 3.5s;
+}
+
+
+@keyframes col {
+    from {
+        color: red;
+    }
+
+    14.3% {
+        color: orange;
+    }
+
+    28.6% {
+        color: yellow;
+    }
+
+    42.9% {
+        color: green;
+    }
+
+    57.2% {
+        color: cyan;
+    }
+
+    71.5% {
+        color: blue;
+    }
+
+    85.8% {
+        color: magenta;
+    }
+
+    to {
+        color: red;
+    }
+}
